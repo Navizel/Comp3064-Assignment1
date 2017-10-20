@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+Source file name: RockController.cs
+Author: Mark Jerome Villamor
+Last Modified by: Mark Jerome Villamor
+Date Last Modified: 20-10-2017
+Program Description: This script controls the movement of the rock
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,7 +29,8 @@ public class RockController : MonoBehaviour {
 		_transform = gameObject.GetComponent<Transform> ();
 		Reset ();
 	}
-	
+
+	//move rocks
 	// Update is called once per frame
 	void Update () {
 		_currentPos = _transform.position;
@@ -33,7 +41,7 @@ public class RockController : MonoBehaviour {
 			Reset ();
 	}
 
-	//
+	//check if out of bounds and reset position
 	public void Reset(){
 		float xSpeed = Random.Range (minXSpeed, maxXSpeed);
 		float ySpeed = Random.Range (minYSpeed, maxYSpeed);

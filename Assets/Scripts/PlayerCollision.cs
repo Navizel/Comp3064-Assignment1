@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+Source file name: PlayerCollision.cs
+Author: Mark Jerome Villamor
+Last Modified by: Mark Jerome Villamor
+Date Last Modified: 20-10-2017
+Program Description: This script checks if player colides with another object and does the necessary action.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,7 +35,6 @@ public class PlayerCollision : MonoBehaviour {
 
 		if (other.gameObject.tag.Equals ("frog")) {
 			Debug.Log ("Collide frog\n");
-			Destroy (other.gameObject.GetComponent<FrogController>());
 			if (_frogSound != null) {
 				_frogSound.Play ();
 			}

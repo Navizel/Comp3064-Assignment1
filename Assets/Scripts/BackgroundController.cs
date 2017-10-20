@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+Source file name: BackgroundController.cs
+Author: Mark Jerome Villamor
+Last Modified by: Mark Jerome Villamor
+Date Last Modified: 20-10-2017
+Program Description: This script controls the movement of the background
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,7 +29,8 @@ public class BackgroundController : MonoBehaviour {
 		_currentPos = _transform.position;
 		Reset ();
 	}
-	
+
+	//background move
 	// Update is called once per frame
 	void Update () {
 		_currentPos = _transform.position;
@@ -34,6 +43,7 @@ public class BackgroundController : MonoBehaviour {
 		
 	}
 
+	//resets background position
 	private void Reset() {
 		_currentPos = new Vector2 (startX, 0);
 	}

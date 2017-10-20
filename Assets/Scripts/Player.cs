@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+Source file name: Player.cs
+Author: Mark Jerome Villamor
+Last Modified by: Mark Jerome Villamor
+Date Last Modified: 20-10-2017
+Program Description: This script allows player to move around the game
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

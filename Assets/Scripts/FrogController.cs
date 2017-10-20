@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+Source file name: FrogController.cs
+Author: Mark Jerome Villamor
+Last Modified by: Mark Jerome Villamor
+Date Last Modified: 20-10-2017
+Program Description: This script controls the movement of the frog
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -45,9 +53,5 @@ public class FrogController : MonoBehaviour {
 		float y = Random.Range (startY, endY);
 		float dx = Random.Range (100,0);
 		_currentPos = new Vector2 (startX + dx, y);
-
-		/*float x = Random.Range (startX, endX);
-		float dy = Random.Range (0, 100);
-		_currentPos = new Vector2 (x,startY + dy);*/
 	}
 }

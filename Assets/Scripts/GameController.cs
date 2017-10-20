@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+Source file name: GameController.cs
+Author: Mark Jerome Villamor
+Last Modified by: Mark Jerome Villamor
+Date Last Modified: 20-10-2017
+Program Description: This script controls behavior of the canvas. Adds points and subtracts life to the player
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -44,6 +51,7 @@ public class GameController : MonoBehaviour {
 		
 	}
 
+	//executes upon game over
 	public void gameOver(){
 		gameOverLabel.gameObject.SetActive (true);
 		highScoreLabel.gameObject.SetActive (true);
@@ -54,12 +62,14 @@ public class GameController : MonoBehaviour {
 		highScoreLabel.text = "High Score: " + Player.Instance.Score;
 	}
 
+	//update score and life values 
 	public void updateUI(){
 
 		scoreLabel.text = "Score: " + Player.Instance.Score;
 		lifeLabel.text = "Life: " + Player.Instance.Life;
 	}
 
+	//restarts the scene when button is clicked
 	public void RestartBtnClick() {
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
 	}
